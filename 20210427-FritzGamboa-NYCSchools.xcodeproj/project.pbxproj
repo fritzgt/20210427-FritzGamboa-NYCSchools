@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041D176B2639E5E000B3B13C /* NYCSchools.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041D17692639E5E000B3B13C /* NYCSchools.xcdatamodeld */; };
+		041D17762639E88000B3B13C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D17752639E88000B3B13C /* CoreDataStack.swift */; };
+		041D177F2639EAEB00B3B13C /* Schools+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041D177E2639EAEB00B3B13C /* Schools+Convinience.swift */; };
+		043AF34526392A7C00D54C18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AF34426392A7C00D54C18 /* DetailViewController.swift */; };
+		043AF35326392ACB00D54C18 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AF35226392ACB00D54C18 /* ModelController.swift */; };
+		04920C66263A9865003B2F82 /* SchoolModelCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04920C65263A9865003B2F82 /* SchoolModelCodable.swift */; };
+		04920C6E263A98B9003B2F82 /* ScoreModelCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04920C6D263A98B9003B2F82 /* ScoreModelCodable.swift */; };
 		04C1DD072639222D000DAB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DD062639222D000DAB14 /* AppDelegate.swift */; };
 		04C1DD092639222D000DAB14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DD082639222D000DAB14 /* SceneDelegate.swift */; };
-		04C1DD0B2639222D000DAB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DD0A2639222D000DAB14 /* ViewController.swift */; };
+		04C1DD0B2639222D000DAB14 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1DD0A2639222D000DAB14 /* ListViewController.swift */; };
 		04C1DD0E2639222D000DAB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1DD0C2639222D000DAB14 /* Main.storyboard */; };
 		04C1DD102639222E000DAB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C1DD0F2639222E000DAB14 /* Assets.xcassets */; };
 		04C1DD132639222E000DAB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C1DD112639222E000DAB14 /* LaunchScreen.storyboard */; };
@@ -35,10 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041D176A2639E5E000B3B13C /* NYCSchools.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NYCSchools.xcdatamodel; sourceTree = "<group>"; };
+		041D17752639E88000B3B13C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		041D177E2639EAEB00B3B13C /* Schools+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schools+Convinience.swift"; sourceTree = "<group>"; };
+		043AF34426392A7C00D54C18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		043AF35226392ACB00D54C18 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		04920C65263A9865003B2F82 /* SchoolModelCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModelCodable.swift; sourceTree = "<group>"; };
+		04920C6D263A98B9003B2F82 /* ScoreModelCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModelCodable.swift; sourceTree = "<group>"; };
 		04C1DD032639222D000DAB14 /* 20210427-FritzGamboa-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20210427-FritzGamboa-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C1DD062639222D000DAB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C1DD082639222D000DAB14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04C1DD0A2639222D000DAB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04C1DD0A2639222D000DAB14 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		04C1DD0D2639222D000DAB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04C1DD0F2639222E000DAB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C1DD122639222E000DAB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +90,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041D177A2639EA9F00B3B13C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				041D17752639E88000B3B13C /* CoreDataStack.swift */,
+				041D177E2639EAEB00B3B13C /* Schools+Convinience.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		043AF34E26392AB900D54C18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04920C65263A9865003B2F82 /* SchoolModelCodable.swift */,
+				04920C6D263A98B9003B2F82 /* ScoreModelCodable.swift */,
+				041D17692639E5E000B3B13C /* NYCSchools.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043AF35726392AD300D54C18 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043AF35226392ACB00D54C18 /* ModelController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		04C1DCFA2639222D000DAB14 = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				04C1DD062639222D000DAB14 /* AppDelegate.swift */,
+				041D177A2639EA9F00B3B13C /* Helpers */,
 				04C1DD082639222D000DAB14 /* SceneDelegate.swift */,
-				04C1DD0A2639222D000DAB14 /* ViewController.swift */,
-				04C1DD0C2639222D000DAB14 /* Main.storyboard */,
+				043AF35726392AD300D54C18 /* Model Controller */,
+				043AF34E26392AB900D54C18 /* Model */,
+				04C1DD3A2639232A000DAB14 /* View Controllers */,
+				04C1DD392639231C000DAB14 /* Storyboards */,
 				04C1DD0F2639222E000DAB14 /* Assets.xcassets */,
 				04C1DD112639222E000DAB14 /* LaunchScreen.storyboard */,
 				04C1DD142639222E000DAB14 /* Info.plist */,
@@ -126,6 +170,23 @@
 				04C1DD2A2639222E000DAB14 /* Info.plist */,
 			);
 			path = "20210427-FritzGamboa-NYCSchoolsUITests";
+			sourceTree = "<group>";
+		};
+		04C1DD392639231C000DAB14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DD0C2639222D000DAB14 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04C1DD3A2639232A000DAB14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C1DD0A2639222D000DAB14 /* ListViewController.swift */,
+				043AF34426392A7C00D54C18 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C1DD0B2639222D000DAB14 /* ViewController.swift in Sources */,
+				041D17762639E88000B3B13C /* CoreDataStack.swift in Sources */,
+				04C1DD0B2639222D000DAB14 /* ListViewController.swift in Sources */,
 				04C1DD072639222D000DAB14 /* AppDelegate.swift in Sources */,
+				041D177F2639EAEB00B3B13C /* Schools+Convinience.swift in Sources */,
 				04C1DD092639222D000DAB14 /* SceneDelegate.swift in Sources */,
+				04920C66263A9865003B2F82 /* SchoolModelCodable.swift in Sources */,
+				041D176B2639E5E000B3B13C /* NYCSchools.xcdatamodeld in Sources */,
+				043AF35326392ACB00D54C18 /* ModelController.swift in Sources */,
+				043AF34526392A7C00D54C18 /* DetailViewController.swift in Sources */,
+				04920C6E263A98B9003B2F82 /* ScoreModelCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Z359XU35F;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = "20210427-FritzGamboa-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9Z359XU35F;
+				DEVELOPMENT_TEAM = N3P8URX7UV;
 				INFOPLIST_FILE = "20210427-FritzGamboa-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,6 +661,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		041D17692639E5E000B3B13C /* NYCSchools.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				041D176A2639E5E000B3B13C /* NYCSchools.xcdatamodel */,
+			);
+			currentVersion = 041D176A2639E5E000B3B13C /* NYCSchools.xcdatamodel */;
+			path = NYCSchools.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04C1DCFB2639222D000DAB14 /* Project object */;
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1030" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Schools" representedClassName="Schools" syncable="YES" codeGenerationType="class">
+        <attribute name="dbn" optional="YES" attributeType="String"/>
+        <attribute name="neighborhood" optional="YES" attributeType="String"/>
+        <attribute name="schoolName" optional="YES" attributeType="String"/>
+        <attribute name="totalStudents" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Scores" representedClassName="Scores" syncable="YES" codeGenerationType="class">
+        <attribute name="dbn" optional="YES" attributeType="String"/>
+        <attribute name="numOfSatTestTakers" optional="YES" attributeType="String"/>
+        <attribute name="schoolName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Schools" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Scores" positionX="-54" positionY="9" width="128" height="28"/>
+    </elements>
+</model>
