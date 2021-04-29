@@ -49,6 +49,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" id="gL2-f6-cLR">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -61,6 +65,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nxs-No-mPs"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="gL2-f6-cLR" id="LvA-5z-aI8"/>
                         <outlet property="tableView" destination="U0p-1x-2zQ" id="Mn7-pF-oLd"/>
                     </connections>
                 </viewController>
@@ -76,18 +81,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="146" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-Y3-s1R">
-                                <rect key="frame" x="104.5" y="345" width="205.5" height="206"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-Y3-s1R">
+                                <rect key="frame" x="8" y="377.5" width="398" height="141"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-b0-5o8">
-                                        <rect key="frame" x="0.0" y="0.0" width="205.5" height="33.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-b0-5o8">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of test takers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-Qf-di0">
-                                        <rect key="frame" x="0.0" y="179.5" width="205.5" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of test takers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKb-Qf-di0">
+                                        <rect key="frame" x="0.0" y="120.5" width="165.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -97,6 +102,8 @@
                         <viewLayoutGuide key="safeArea" id="NY6-yd-Kpm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NY6-yd-Kpm" firstAttribute="trailing" secondItem="mUC-Y3-s1R" secondAttribute="trailing" constant="8" id="8QI-Bk-TPe"/>
+                            <constraint firstItem="mUC-Y3-s1R" firstAttribute="leading" secondItem="NY6-yd-Kpm" secondAttribute="leading" constant="8" id="dPO-RC-6Sf"/>
                             <constraint firstItem="mUC-Y3-s1R" firstAttribute="centerX" secondItem="vqn-fT-FSS" secondAttribute="centerX" id="hkA-Fe-Gpt"/>
                             <constraint firstItem="mUC-Y3-s1R" firstAttribute="centerY" secondItem="vqn-fT-FSS" secondAttribute="centerY" id="n5A-i8-L9k"/>
                         </constraints>
@@ -109,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imh-B7-Ywh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="226"/>
+            <point key="canvasLocation" x="1656.521739130435" y="225.66964285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1j-I3-x6k">

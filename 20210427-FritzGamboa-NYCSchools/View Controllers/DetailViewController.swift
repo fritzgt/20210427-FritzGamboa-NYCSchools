@@ -37,8 +37,8 @@ class DetailViewController: UIViewController {
             return
         }
         DispatchQueue.main.async {
-            self.schoolNameLabel.text = school.schoolName
-            self.numberOfTestLabel.text = school.satScores!.numOfSatTestTakers
+            self.schoolNameLabel.text = "School: \(school.schoolName)"
+            self.numberOfTestLabel.text = "Test Takers: \(school.satScores!.numOfSatTestTakers)"
         }
     }
 }

@@ -11,6 +11,7 @@ class ListViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     // MARK: - Properties
     private var schoolController = SchoolController()
@@ -39,6 +40,7 @@ class ListViewController: UIViewController {
             //pass data to next view
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.loadingIndicator.isHidden = true
             }
         }
     }
